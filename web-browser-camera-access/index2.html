@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello Camera</title>
+    <script src="https://unpkg.com/dynamsoft-camera-enhancer@2.1.0/dist/dce.js"></script>
+</head>
+<style>
+.line {
+	height: 10px;
+	width: 100%;
+    background:  #0a6792;
+    margin: 0 auto;
+}
+#m1 {
+	display:block;
+	width: 110px;
+	height: 30px;
+	background:  #0a6792;
+	padding-top: 10px; 
+	padding-left: 9px;
+}
+#SiteName{
+	float: top;
+	text-decoration: none;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: xx-large;
+	color: white; 
+	margin-left: 0%;
+	width: 100%;
+	display:block;
+	width: 200px;
+	height: 30px;
+	background: #0a6792;
+	padding-top: 10px; 
+	padding-left: 9px;	
+}
+ a {
+    color:  #8cd0f0;
+    text-decoration: none;
+    font-size: 36px;
+}
+ a:hover {
+    color: rgb(119, 119, 119);
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 40px;
+}
+ p {
+	font-size: 16px;
+	padding-top: 5px;
+	padding-left: 2px;
+	font-style: italic;
+}
+
+@media (min-width: 1000px){
+	#wrap {
+		width: 1010px;
+	}
+	#wrap2 {
+		width: 1010px;
+	}
+	body{
+		/*background-image: url(.jpg);*/
+		background-color:lightblue;
+    }
+    a{
+        font-size: 26px;
+    }
+	.hat{
+	    background-size: 15%;
+	}
+    .horizontal{
+	    margin-left: 40%;
+    }
+}
+@media (max-width: 1000px)and(min-width: 600px){
+	body{
+		background-color: lightgreen;
+	}
+	.hat{
+	    background-size: 15%;
+    }
+    a{
+        font-size: 26px;
+    }
+   .horizontal{
+	    margin-left: 30%;
+    }
+}
+@media (max-width: 599px){
+	body{
+	    background: #3c8dda;
+	}
+	a{
+        font-size: 16px;
+    }
+	.notimp{
+		display: none;
+	}
+	.large{
+		height: 280px;
+	}
+	#m1 {
+		width: 80px;
+	}
+	.hat{
+		background-size: contain;
+	}
+    .horizontal{
+	margin-left: 0%;
+    }
+}
+
+.hat{
+	height:20%;	
+	width:100%;
+	background-image: url("imgTinyartistsmodified.jpg");
+}
+.buttons div{
+	display: inline-block;
+}
+#SiteNameBackgr{
+	/*background-color: #66Bfb7;*/
+}
+#long{
+	width:100%;
+	height:20%;
+}
+#wrap
+{
+		height: 1100px;
+		background: LightBlue;
+}
+.text1{
+		text-align: center;
+		padding-top: 70px;
+		font-size: 10pt;
+		font-family: monospace;
+		color:#0d071d;
+	}
+	.blocking{
+		display: flex;
+        align-items: stretch;
+		flex-wrap: wrap;
+		min-height: 400px;
+		min-width: 800px;
+		/* background: rgb(71, 66, 92); */
+	}
+	.blockeach{
+		display: flex;
+        align-items: stretch;
+		margin-top: 50px;
+		margin-left: 40px;
+		flex-wrap: wrap;
+		min-height: 100px;
+		min-width: 200px;
+		
+	}	
+	.textblock{
+		display: flex;
+		/* position: fixed; */
+		background-color: #0a6792;
+		align-items: baseline;
+		flex-direction: column;
+		padding-top: 50px;
+		padding-left: 40px;
+		width: 180px;
+		height: 250px;
+	}
+	/* #wrap2 {
+	background: #ffffff;
+	margin: 0 auto; 
+}*/
+</style>
+ 
+<body>
+    <div class="background-img">
+    <div class="line"></div><!--END LINE-->
+    <div class="hat" >
+        <div class="horizontal" >
+            <div class="buttons" >
+                <div id="SiteNameBackgr">
+                    <a href="#" id="SiteName">PoseLikePro</a>
+                </div>
+                <div id="menu" >
+                   <a href="index.html" id="m1">Help</a>
+                </div>
+                <div id="menu" >
+                    <a href="index.html" target=”_blank” id="m1">Settings</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="line"></div> 
+	<div id="wrap2">
+		<div class="blocking">
+			<div class="blockeach">
+				<a href="pagePicProfile.php">
+				<img height="300px" src="picbaseModel.jpg"/></a>
+				<div id="header_top" class="textblock">
+					<a href="#" class="smp">AAAAAAAA</a>
+					<strong>skills</strong><p> skills/...</p>
+					<em style="font-size: 120%; font-family: monospace; color:#580957">Description</em>
+				</div>
+											
+			</div>
+			<div class="blockeach">
+				<a href="pagePicProfile.php">
+				<img height="300px" src="picbaseModel.jpg"/></a>
+				<div id="header_top" class="textblock">
+					<a href="#" class="smp">AAAAAAAA</a>
+					<p>skills</p>
+					<em style="font-size: 120%; font-family: monospace; color:#580957">Description</em>
+				</div>
+											
+			</div>
+		</div>
+	</div>  
+	
+	
+</body>
+
+</html>
